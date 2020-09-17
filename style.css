@@ -1,0 +1,115 @@
+/* universal operator */
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+
+/* css for body */
+
+body {
+    background-image: url('./images/bg3.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* desing for title */
+
+.display-1 {
+    color: brown;
+    font-weight: 500;
+    font-family: 'Arial'
+}
+
+
+/* desing for heading */
+
+.h1 {
+    color: yellow;
+    font-family: 'Almendra' serif;
+    font-size: 3.5em !important;
+}
+
+
+/* bubble messages list */
+
+.lineMessage {
+    list-style: none;
+    color: white;
+    border-radius: 20em;
+    margin: 5px;
+    width: 40%;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: transparent;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* input message */
+
+#message {
+    width: 80vw;
+    margin: 10px auto;
+    font-size: 25px;
+    height: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: fixed;
+    bottom: 0;
+    left: 70px;
+    outline: none;
+}
+
+
+/* manual scroll bar */
+
+.static {
+    overflow: auto;
+    height: 430px;
+    width: 100vw;
+}
+
+
+/* send button */
+
+.button {
+    position: fixed;
+    bottom: 7px;
+    right: 109px;
+}
+
+.textMessage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* delete button */
+
+.del {
+    padding: 4px;
+    margin-left: 25px;
+    border-radius: 20em;
+    border: none;
+    color: red;
+    background-color: black;
+    display: flex;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    text-align: center;
+    /* font: outline; */
+    width: fit-content;
+    background-color: none;
+}
+
+.del:hover {
+    color: white;
+    background-color: red;
+}
