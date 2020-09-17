@@ -1,0 +1,108 @@
+@media only screen and (max-width: 576px) {
+    /* desing for heading*/
+    .h1 {
+        color: yellow;
+        font-family: 'Almendra' serif;
+        font-size: 1.5em !important;
+    }
+    /* desing for title */
+    .display-1 {
+        font-size: 3rem !important;
+    }
+    /* bubble messages list */
+    .lineMessage {
+        width: 70%;
+        font-size: 17px;
+    }
+    /* send button */
+    .button {
+        position: fixed;
+        bottom: 10px;
+        right: 2em;
+    }
+    /* input message */
+    #message {
+        width: 50vw;
+        font-size: 19px;
+    }
+    /* delete button */
+    .del {
+        font-size: 14px;
+    }
+    /* manual scroll bar */
+    .static {
+        height: 25em;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width:768px) {
+    .h1 {
+        color: yellow;
+        font-family: 'Almendra' serif;
+        font-size: 1.5em !important;
+    }
+    .display-1 {
+        font-size: 3rem !important;
+    }
+    .lineMessage {
+        width: 70%;
+    }
+    .button {
+        position: fixed;
+        bottom: 10px;
+        right: 4em;
+    }
+    #message {
+        width: 64vw;
+    }
+    .static {
+        height: 70em;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width:992px) {
+    .h1 {
+        color: yellow;
+        font-family: 'Almendra' serif;
+        font-size: 2.5em !important;
+    }
+    .display-1 {
+        font-size: 4.5rem !important;
+    }
+    .lineMessage {
+        width: 70%;
+    }
+    .button {
+        position: fixed;
+        bottom: 10px;
+        right: 4em;
+    }
+    #message {
+        width: 70vw;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width:1200px) {
+    .h1 {
+        color: yellow;
+        font-family: 'Almendra' serif;
+        font-size: 2.5em !important;
+    }
+    .display-1 {
+        font-size: 4.5rem !important;
+    }
+    .lineMessage {
+        width: 50%;
+    }
+    .button {
+        position: fixed;
+        bottom: 10px;
+        right: 4em;
+    }
+    #message {
+        width: 70vw;
+    }
+    .static {
+        height: 70em;
+    }
+}
