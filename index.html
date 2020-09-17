@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- application title name -->
+    <title>CHAT APP</title>
+
+    <!-- style sheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- responsive sheet for devices -->
+    <link rel="stylesheet" href="phone.css">
+
+    <!-- fontawesome link for use icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Almendra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+    <!-- Using some bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-database.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyDVoIWGYOewsdNkqEr1ZbuqRWTpTZmdhsY",
+            authDomain: "chat-app-com.firebaseapp.com",
+            databaseURL: "https://chat-app-com.firebaseio.com",
+            projectId: "chat-app-com",
+            storageBucket: "chat-app-com.appspot.com",
+            messagingSenderId: "764842549171",
+            appId: "1:764842549171:web:5759023b344b013d3175c6",
+            measurementId: "G-NNKR0HBSVX"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+
+<body>
+    <!-- title name -->
+    <center>
+        <h1 class="h1">Connect With Friends <i class="fas fa-smile-wink"></i></h1>
+        <h1 class="display-1">ChatApp <i class="far fa-comments"></i>
+        </h1>
+    </center>
+
+    <div class="mainChat">
+        <!-- Scrollable  -->
+        <div class="static">
+            <!-- create message list -->
+            <ul id="messaages">
+
+        </div>
+    </div>
+
+    <div class="textMessage">
+        <!-- simple message form -->
+        <form onsubmit="return sendMessage();">
+            <input type="text" class="rounded" placeholder="Enter Message..." id="message" required autocapitalize="on" autocomplete="off" autofocus>
+            <input type='submit' value="Send" class=" rounded button p-2 mx-2 btn btn-outline-success">
+        </form>
+    </div>
+    </div>
+</body>
+
+<!-- usign jquery of bootstrap  -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+<!-- using manual js -->
+<script src="app.js"></script>
+
+</html>
